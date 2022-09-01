@@ -3,7 +3,7 @@ const candidateSwitch = document.querySelector(`#candidate-switch`);
 const numberControls = document.querySelectorAll(`.number-control`);
 
 let lastItem;
-//Damalara click eden zaman ferqlidirse silsin select classini
+
 damas.forEach((dama) => {
   dama.addEventListener("click", function (e) {
     dama.classList.add("selected");
@@ -12,7 +12,6 @@ damas.forEach((dama) => {
   });
 });
 
-//contolda butona basanda butonun text ini
 numberControls.forEach((nc) => {
   nc.addEventListener("click", function (e) {
     if (candidateSwitch.checked == false) {
